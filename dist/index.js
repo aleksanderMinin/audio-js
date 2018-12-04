@@ -1412,9 +1412,7 @@ if(typeof modules === 'object' && isFunction(modules.define)) {
 }
 
 if(typeof define === 'function') {
-    define(function(require, exports, module) {
-        module.exports = vow;
-    });
+    define(require, exports, module);
     defineAsGlobal = false;
 }
 
